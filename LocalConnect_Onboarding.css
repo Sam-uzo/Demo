@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*colours*/
+  --LIGHT-GRAY: rgb(128, 128, 128);
+  --GREEN: #0e6860;
+  /*padding*/
+  --DESKTOP-PADDING: 3rem 2rem;
+  --MOBILE-PADDING: 2rem 1rem;
+  --CARD-PADDING: 2rem;
+}
+
+html,
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: white;
+  display: block;
+}
+
+.page-container {
+  width: 1005;
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: VAR(--DESKTOP-PADDING);
+  min-height: 100vh;
+  text-align: center;
+}
+
+.greetings {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.greetings p {
+  font-weight: bold;
+  color: #334155;
+}
+
+.card p {
+  color: #334155;
+  text-align: left;
+}
+
+.para-border {
+  padding: 0 1rem;
+}
+
+.button-border {
+  text-align: center;
+}
+
+.roles {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  box-shadow: 1.5px 1.5px 8px var(--LIGHT-GRAY);
+  border-radius: 16px;
+  padding: var(--CARD-PADDING);
+  width: 100%;
+  max-width: 364px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.card img {
+  border-radius: 8px;
+  max-width: 100%;
+  width: 300px;
+  height: 200px;
+}
+
+.card button {
+  display: inline-block;
+  width: 80%;
+  text-decoration: none;
+  color: var(--GREEN);
+  border: 1px solid var(--GREEN);
+  border-radius: 16px;
+  padding: 1rem 1rem;
+}
+
+.btn-select:hover {
+  background-color: var(--GREEN);
+  color: white;
+}
+
+.btn-select:active {
+  background-color: var(--GREEN);
+  color: white;
+}
+
+.btn-select:focus {
+  background-color: var(--GREEN);
+  color: white;
+}
+
+.card button:active {
+  background-color: var(--GREEN);
+}
+
+@media (max-width: 480px) {
+  .page-container {
+    padding: var(--MOBILE-PADDING);
+    margin: 0 auto;
+  }
+
+  .roles {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
