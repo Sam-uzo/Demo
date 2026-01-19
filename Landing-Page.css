@@ -52,7 +52,7 @@ body {
 .hero {
   position: relative;
   height: 480px;
-  background-image: url("Images and icons/hero-town 1.png");
+  background-image: url("https://ik.imagekit.io/Ujosem2007/hero-town%201.png");
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -409,6 +409,29 @@ body {
 .Desktop-Design {
   display: block;
 }
+
+  .icon-d {
+    width: 1.85rem;
+    height: 1.85rem;
+    color: var(--main-color);
+    transition: color 0.3s ease;
+  }
+
+  .icon-box {
+    width: 3rem;
+    height: 3rem;
+    background: rgba(19, 78, 74, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.6rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+
+
+
+
 
 /* MOBILE VIEW */
 @media (max-width: 1250px) {
